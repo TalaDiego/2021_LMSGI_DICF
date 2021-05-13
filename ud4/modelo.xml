@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<modelo
+    xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='modelo.xsd'>
+    <curso>1</curso>
+    <ciclo>DAW</ciclo>
+    <nombreciclo>Desarrollo de Aplicaciones Web</nombreciclo>
+    <codigoPostal>49600</codigoPostal>
+    <comentario>   Este   ciclo   tiene   una    insercion laboral  de    100%   </comentario>
+    <temperatura>25</temperatura>
+    <codigoAsginatura>LMSGI</codigoAsginatura>
+    <profesor codP="ARN">Amor Rodríguez</profesor>
+</modelo>

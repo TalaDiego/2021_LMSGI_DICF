@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mail>
+    <remitente>Diego@gmail.com</remitente>
+    <destinatario>ambrosio@gmail.com</destinatario>
+    <destinatario>meli@gmail.com</destinatario>
+    <destinatario>amor@gmail.com</destinatario>
+    <fecha>
+        <dia>26</dia>
+        <mes>01</mes>
+        <anyo>2021</anyo>
+    </fecha>
+    <asunto>Prueba mensaje</asunto>
+    <mensaje/>
+    <ficheros>
+        <nombre>informe.pdf</nombre>
+        <tipo>application/pdf</tipo>
+    </ficheros>
+    <ficheros>
+        <nombre>foto.png</nombre>
+        <tipo>image/png</tipo>
+    </ficheros>
+        
+</mail>

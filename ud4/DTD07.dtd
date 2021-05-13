@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!ELEMENT xs:schema (xs:element)*>
+<!ATTLIST xs:schema
+    version CDATA #IMPLIED
+    elementFormDefault CDATA #IMPLIED
+    xmlns:xs CDATA #IMPLIED
+  >
+
+<!ELEMENT xs:element (xs:complexType)*>
+<!ATTLIST xs:element
+    name CDATA #IMPLIED
+    maxOccurs CDATA #IMPLIED
+  >
+
+<!ELEMENT xs:complexType (xs:simpleContent|xs:sequence)*>
+
+<!ELEMENT xs:sequence (xs:element)*>
+
+<!ELEMENT xs:simpleContent (xs:extension)*>
+
+<!ELEMENT xs:extension (xs:attribute)*>
+<!ATTLIST xs:extension
+    base CDATA #IMPLIED
+  >
+
+<!ELEMENT xs:attribute EMPTY>
+<!ATTLIST xs:attribute
+    type CDATA #IMPLIED
+    name CDATA #IMPLIED
+  >

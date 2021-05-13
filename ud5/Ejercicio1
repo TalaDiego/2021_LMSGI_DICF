@@ -1,0 +1,59 @@
+Unidad 5. XPath 
+
+Hoja 1.- Ejercicio 1 Dado el siguientes datos XPath online real-time tester, evaluator and generator for XML & HTML (xpather.com) se pide realizar las siguientes consultas: 
+
+1. Título de las actividades
+
+//titulo/text()
+
+2. Mostrar el código de la actividad, título y nivel.
+
+//codigo | //titulo | //@nivel
+
+3. El primer título de la actividad.
+
+//actividad[1]/titulo
+
+4. El último título de la actividad.
+
+//actividad[last()]/titulo
+
+5. Todos los elementos descendientes de las actividades infantiles
+
+//descendant:: actividad[@nivel="infantil"]
+
+6. El nombre de las actividades para adultos.
+
+//actividad[@nivel="adultos"]/titulo/text()
+
+7. El nombre de las actividades con dos sesiones semanales
+
+//actividad[sesiones/sesiones_semana=2]/titulo/text()
+
+8. Número de actividades
+
+count(//actividad)
+
+9. Si queremos convertir el resultado a cadena de caracteres, podemos usar la función string().
+
+string(count(/actividades/actividad))="6"
+
+10. Cuenta del número de actividades infantiles.
+
+count(//actividad[@nivel="infantil"])
+
+11. Suma de las sesiones semanales de las actividades para adultos.
+
+sum(//actividad[@nivel="adultos"]//sesiones/sesiones_semana)
+
+12. Nodos de la actividad de código A06.
+
+//actividad[codigo="A06"]/node()
+
+13. Duración de las actividades con intensidad fuerte
+
+sum(//actividad/sesiones[@intensidad="fuerte"]/minutos_sesion)
+
+14. Mostrar el código de las actividades cuya duración coincide con la duración del 1º actividad.
+
+/actividades/actividad[sesiones/minutos_sesion=../actividad[1]/sesiones/minutos_sesion]

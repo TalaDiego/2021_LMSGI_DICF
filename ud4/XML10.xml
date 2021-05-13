@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE horario [
+<!ELEMENT horario (modulos,profesores,imparte,grupo)*>
+<!ATTLIST horario
+    curso CDATA #IMPLIED
+  >
+
+<!ELEMENT modulos (modulo)*>
+
+<!ELEMENT modulo (#PCDATA)>
+<!ATTLIST modulo
+    codM CDATA #IMPLIED
+  >
+
+<!ELEMENT profesores (profesor)*>
+
+<!ELEMENT profesor (#PCDATA)>
+<!ATTLIST profesor
+    codP CDATA #IMPLIED
+  >
+
+<!ELEMENT imparte (asignatura)*>
+
+<!ELEMENT asignatura EMPTY>
+<!ATTLIST asignatura
+    codM CDATA #IMPLIED
+    codProfesor CDATA #IMPLIED
+  >
+
+<!ELEMENT grupo (hora)*>
+<!ATTLIST grupo
+    idgrupo CDATA #IMPLIED
+    codT CDATA #IMPLIED
+  >
+
+<!ELEMENT hora (dia_sem)*>
+<!ATTLIST hora
+    entrada CDATA #IMPLIED
+    salida CDATA #IMPLIED
+  >
+
+<!ELEMENT dia_sem (#PCDATA)>
+<!ATTLIST dia_sem
+    dia CDATA #IMPLIED
+    num CDATA #IMPLIED
+  >
+]>
+
+<horario curso="2020-21">
+    <modulos>    
+        <modulo codM="EDD" >Entornos de Desarrollo</modulo>
+        <modulo codM="LMSGI">Lenguaje de Marcas y Sistemas de Gestion de la Información</modulo>
+        <modulo codM="PROG">Programación</modulo>
+        <modulo codM="BBDD">Bases de Datos</modulo>
+        <modulo codM="SINF">Sistemas de Información</modulo>
+    </modulos>
+    <profesores>
+        <profesor codP="MUP">Marcos Unzueta Puente</profesor>
+        <profesor codP="ARN">Amor Rodriguez Navarro</profesor>
+        <profesor codP="ACF">Ambrosio Casado Fernandez</profesor>
+        <profesor codP="HRO">Hermelinda Ramos Osorio</profesor>
+        <profesor codP="NCB">Natividad Crespo Belver</profesor>   
+    </profesores>
+    <imparte>
+        <asignatura codM="EDD" codProfesor="MUP"/>
+        <asignatura codM="LMSGI" codProfesor="ARN"/>
+        <asignatura codM="PROG"  codProfesor="ACF"/>
+        <asignatura codM="BBDD"  codProfesor="HRO"/>
+        <asignatura codM="SINF"  codProfesor="NCB"/>
+    </imparte>  
+    <grupo idgrupo="DAW1" codT="MUP">
+        <hora entrada="08:30" salida="09:20">
+            <dia_sem dia="lunes" num="1">EDD</dia_sem>			
+        </hora>
+        <hora entrada="10:10" salida="11:00">
+            <dia_sem dia="lunes" num="2">BBDD</dia_sem>		
+        </hora>
+        <hora entrada="12:15" salida="13:05">
+            <dia_sem dia="lunes" num="2">SINF</dia_sem>
+        </hora>
+        <hora entrada="13:05" salida="13:55">
+            <dia_sem dia="viernes" num="1">EDD</dia_sem>		
+        </hora>
+    </grupo>
+</horario>

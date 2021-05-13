@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<xs:schema version="1.0"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+    <xs:element name="mapaestelar">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="constelacion">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="nombreespañol" type="xs:string"/>
+                            <xs:element name="superficie" type="xs:float"/>
+                            <xs:element name="estrellas">
+                                <xs:complexType>
+                                    <xs:simpleContent>
+                                        <xs:extension base="xs:positiveInteger">
+                                            <xs:element name="asterismo"/>
+                                        </xs:extension>
+                                        <xs:extension base="xs:float">
+                                            <xs:element name="masBrillante"/>
+                                        </xs:extension> 
+                                    </xs:simpleContent>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="objetos">
+                                <xs:complexType>
+                                    <xs:simpleContent>
+                                        <xs:extension base="xs:boolean">
+                                            <xs:element name="cumulos"/>
+                                        </xs:extension>
+                                        <xs:extension base="xs:boolean">
+                                            <xs:element name="nebulosas"/>
+                                        </xs:extension>
+                                        <xs:extension base="xs:boolean">
+                                            <xs:element name="galaxias"/>
+                                        </xs:extension>
+                                        <xs:extension base="xs:boolean">
+                                            <xs:element name="cuasares"/>
+                                        </xs:extension>
+                                        <xs:extension base="xs:boolean">
+                                            <xs:element name="lluviademeteoros"/>
+                                        </xs:extension>
+                                    </xs:simpleContent>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="colindantes" type="xs:string"/>
+                            <xs:element name="observacion">
+                                <xs:complexType>
+                                    <xs:simpleContent>
+                                        <xs:extension base="xs:string">
+                                            <xs:element name="hemisferio"/>
+                                        </xs:extension>
+                                        <xs:extension base="xs:integer">
+                                            <xs:element name="mes"/>
+                                        </xs:extension>
+                                        <xs:extension base="xs:time">
+                                            <xs:element name="hora"/>
+                                        </xs:extension>
+                                    </xs:simpleContent>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

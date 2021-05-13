@@ -1,0 +1,31 @@
+<xs:schema version="1.0" 
+           elementFormDefault="qualified" 
+           xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="listatickets">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="ticket" minOccurs="0" maxOccurs="unbounded">
+                    <xs:annotation>
+                        <xs:documentation>Autor .- Nombre y Apellidos  Fecha.- Lunes 20 de abril de 2020  Descripcion .- Listado de tickets</xs:documentation>
+                    </xs:annotation>
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="numero" type="xs:short"/>
+                            <xs:element name="fecha" type="xs:date"/>
+                            <xs:element name="hora" type="xs:time"/>
+                            <xs:element name="producto" minOccurs="0" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="nombre" type="xs:string"/>
+                                        <xs:element name="precio" type="xs:float"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="total" type="xs:float"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

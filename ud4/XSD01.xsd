@@ -1,0 +1,36 @@
+<xs:schema version="1.0"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+    <xs:element name="mail">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element type="xs:string" name="remitente"/>
+                <xs:element maxOccurs="unbounded" type="xs:string" name="destinatario"/>
+                <xs:element name="fecha">
+                    <xs:complexType>
+                        <xs:attribute type="xs:gDay" name="dia"/>
+                        <xs:attribute type="xs:gMonth" name="mes"/>
+                        <xs:attribute type="xs:gYear" name="anyo"/>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element minOccurs="0" type="xs:string" name="asunto"/>
+                <xs:element minOccurs="0" type="xs:string" name="mensaje"/>
+                <xs:element maxOccurs="unbounded" name="ficheros">
+                    <xs:complexType>
+                        <xs:simpleContent>
+                            <xs:extension base="xs:string">
+                                <xs:attribute type="xs:string" name="tipo">
+                                    <xs:simpleType>
+                                        <xs:restriction base="xs:string">
+                                            <xs:pattern value="[a-zA-Z]*[/][a-z]*"/>
+                                        </xs:restriction>
+                                    </xs:simpleType>
+                                </xs:attribute>
+                            </xs:extension>
+                        </xs:simpleContent>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

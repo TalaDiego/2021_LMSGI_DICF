@@ -1,0 +1,103 @@
+@font-face {
+	font-family: fonts;
+	/*url:(./fonts/webfonts/fa-solid-900.woff);*/
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+ul, ol {list-style: none;}
+a {text-decoration: none; color: black;}
+
+header{
+	text-align: center;
+}
+
+header h1 {
+	font-size: 30px;
+	padding: 25px;
+}
+
+header h2 {
+	font-size: 25px;
+	padding: 20px;
+}
+
+header h3 {
+	font-size: 20px;
+	padding: 15px;
+}
+
+header h4 {
+	font-size: 15px;
+	padding: 10px;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+	padding: 20px;
+}
+
+nav a:hover {
+	background-color: grey;
+	color: white;
+}
+
+section {
+	width: 33.33%;
+	float: left;
+}
+
+main:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+footer {
+	text-align: center;
+	padding: 10px;
+}
+
+article header {
+	content: "\f0100";
+	font-family: fonts;
+	color: white;
+}
+
+article {
+	background-color: grey;
+	border-radius: 5%;
+	margin: 0px 10px 2px 0px;
+}
+
+article .content {
+	position: relative;
+	padding-left: 125px;
+}
+
+article figure {
+	position: absolute;
+	left: 2px;
+	top: 0px;
+}
+
+article img {
+	width: 120px;
+	height: 120px;
+}
+
+article footer {
+	text-align: center;
+	padding: 10px;
+	margin-left: 50%;
+}
+
+article figcaption {
+	font-size: 10px;
+	text-align: center;
+}

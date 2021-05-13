@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE lugares [
+<!ELEMENT xs:schema (xs:element)*>
+<!ATTLIST xs:schema
+    version CDATA #IMPLIED
+    elementFormDefault CDATA #IMPLIED
+    xmlns:xs CDATA #IMPLIED
+  >
+
+<!ELEMENT xs:element (xs:complexType)*>
+<!ATTLIST xs:element
+    name CDATA #IMPLIED
+    maxOccurs CDATA #IMPLIED
+    type CDATA #IMPLIED
+  >
+
+<!ELEMENT xs:complexType (xs:sequence)*>
+<!ATTLIST xs:complexType
+    mixed CDATA #IMPLIED
+  >
+
+<!ELEMENT xs:sequence (xs:element)*>
+]>
+<lugares xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='08.xsd'>
+    En el <lugar>polo norte</lugar> hace mucho frío. Pero, en el <lugar>desierto del Sahara</lugar> hace mucho calor.
+</lugares>

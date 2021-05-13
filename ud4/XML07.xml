@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE grupo[
+    <!ELEMENT grupo (estudiante)*>
+    <!ELEMENT estudiante (#PCDATA)>
+    <!ATTLIST estudiante cod ID #REQUIRED
+                         idref IDREFS #IMPLIED>
+]>
+<grupo xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='07.xsd'>
+    <estudiante cod="E1">Diego Castaño</estudiante>
+    <estudiante cod="E2">Aroa Granero</estudiante>
+    <estudiante cod="E3" idref="E1">Amor Rodriguez</estudiante>
+    <estudiante cod="E4" idref="E1 E2">Meli Ramos</estudiante>
+</grupo>

@@ -1,0 +1,44 @@
+div{
+width:150px;
+height:150px;
+background-size:cover;
+margin-bottom:10px;
+display:inline-block;
+border:solid black 5px;
+}
+div:nth-child(1){
+background-image:url("images/puntonegro.png");
+background-position:center;
+background-size:28px;
+background-repeat:no-repeat;
+}
+div:nth-child(2){
+background-image:url("images/puntonegro.png"),url("images/puntonegro.png");
+background-position:20% 20% , 80% 80%;
+background-size:28px;
+background-repeat:no-repeat;
+}
+div:nth-child(3){
+background-image:url("images/puntonegro.png"),url("images/puntonegro.png"),url("images/puntonegro.png");
+background-position:20% 20% , 80% 80% , 50% 50%;
+background-size:28px;
+background-repeat:no-repeat;
+}
+div:nth-child(4){
+background-image:url("images/puntonegro.png"),url("images/puntonegro.png"),url("images/puntonegro.png"),url("images/puntonegro.png");
+background-position:20% 20% , 80% 80% , 80% 20% , 20% 80%;
+background-size:28px;
+background-repeat:no-repeat;
+}
+div:nth-child(5){
+background-image:url("images/puntonegro.png"),url("images/puntonegro.png"),url("images/puntonegro.png"),url("images/puntonegro.png"),url("images/puntonegro.png");
+background-position:20% 20% , 80% 80% , 80% 20% , 20% 80% , 50% 50%;
+background-size:28px;
+background-repeat:no-repeat;
+}
+div:nth-child(6){
+background-image:url("images/puntonegro.png"),url("images/puntonegro.png"),url("images/puntonegro.png"),url("images/puntonegro.png"),url("images/puntonegro.png"),url("images/puntonegro.png");
+background-position:20% 20% , 80% 80% , 80% 20% , 20% 80% , 20% 50% , 80% 50%;
+background-size:28px;
+background-repeat:no-repeat;
+}

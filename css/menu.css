@@ -1,0 +1,17 @@
+#header font{
+font: bold 36px/1 fantasy;
+text-transform: uppercase;
+color: #c69c1e;
+text-shadow: 0  2px  0   #8b6e15,
+             0  4px  0   #7c6213,
+             0  6px  0   #6e5611, 
+             0  8px  0   #5f4b0e, 
+             0 10px  0   #503f0c,
+             0 12px  0   #41330a,
+             3px 8px 15px rgba(0,0,0,0.1),
+             3px 8px  5px rgba(0,0,0,0.3);
+text-align:center;
+}
+body{
+background-image: center;
+}

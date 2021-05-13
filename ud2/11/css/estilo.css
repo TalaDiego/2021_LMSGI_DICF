@@ -1,0 +1,134 @@
+﻿/* 
+    Created on : 03-dic-2019, 19:10:50
+    Author     : Amor Rodríguez <amor at marodriguezn@educa.jcyl.es>
+   
+*/
+/* los formateo sin reset.*/
+body, div, p, h1{
+margin: 0;
+padding: 0;
+}
+
+*{
+box-sizing: border-box; 
+font-family: calibri, arial, sans-serif;
+} 
+
+body{
+background-image: url(../images/le_petit_prince.png);
+background-repeat: no-repeat;
+background-position: 100% 0%;
+font-family: calibri,arial,sans-serif;
+margin-right: 250px;
+}
+h1{
+color: #FF4500;
+background-color: orange;
+text-transform: uppercase;
+}
+
+div,p{
+padding: 9px;
+margin-top: 9px;
+margin-bottom: 9px;
+margin-left: 0px;
+margin-right: 0px;
+}
+
+.par1{
+background-color: lightblue;
+color: green;
+padding: 9px;
+font-weight: bolder;
+}
+
+.static{
+border: solid 3px #E9967A;
+position: static;
+}
+
+.relative{
+border: dotted 3px #9932CC;
+position: relative;
+left: 60px;
+}
+
+.fixed{
+border: dashed 3px #04B404;
+background-color: #FFB973;
+position: fixed;
+margin-bottom: 99px;
+max-width: 250px;
+right: 0px;
+bottom: 0px;
+}
+.relative1{
+border: groove 3px #008000;
+width: 500px;
+height: 150px;
+position: relative;
+}
+.absolute1{
+border: ridge 3px #ADFF2F;
+position: absolute;
+width: 250px;
+height: 75px;
+right: 6px;
+bottom: 6px;
+}
+.sticky{
+background-color: #008000;
+border: 3px solid #ADFF2F;
+border-radius: 25px;
+text-align: center;
+color: #ADFF2F;
+position: sticky;
+top: 0;
+}
+.img1{
+position: absolute;
+left: 6px;
+top: 6px;
+width: 30%;
+z-index: -1;
+opacity: 0.5;
+}
+.container{
+position: relative;
+border: 3px solid #8B008B;
+}
+.img2{
+height: auto;
+width: 50%;
+opacity: 0.5;
+z-index: -1;
+}
+.topleft , .topright, .bottomleft, .bottomright, .center{
+position: absolute;
+font-size: 18px;
+font-variant: small-caps;
+font-weight: bolder;
+color: #8B008B;
+background-color: #FF9C00;
+border: 3px solid #8B008B;
+}
+.topleft{
+top: 9px;
+left: 9px;
+}
+.topright{
+top: 9px;
+right: 9px;
+}
+.bottomleft{
+bottom: 9px;
+left: 9px;
+}
+.bottomright{
+bottom: 9px;
+right: 9px;
+}
+.center{
+right: 50%;
+top: 50%;
+}

@@ -1,0 +1,102 @@
+<?xml version="1.0"?>
+<xs:schema version="1.0"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+
+<!-- Declaracion de Tipos complejos -->
+
+
+
+
+
+
+
+
+
+
+
+<!-- Declaracion tipoProfesores -->
+<xs:element name="horario">
+    <xs:complexType name="tipoModulos">
+        <xs:sequence>
+            <xs:element name="modulo" type="tipoModulo" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="tipoModulo">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="codM" type="xs:string"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+<!-- Declaracion tipoProfesores -->
+    <xs:complexType name="tipoProfesores">
+        <xs:sequence>
+            <xs:element name="profesor" type="tipoProfesor" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="tipoProfesor">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="codP" type="xs:string"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+<!-- Declaracion tipoAsignaturas -->
+    <xs:complexType name="tipoAsignaturas">
+        <xs:sequence>
+            <xs:element name="asignatura" type="tipoAsignatura" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="tipoAsignatura">
+        <xs:attribute name="codM" type="xs:string" use="required"/>
+        <xs:attribute name="codProfesor" type="xs:string" use="required"/>
+    </xs:complexType>
+<!-- Declaracion tipoGrupos -->
+    <xs:complexType name="tipoGrupos">
+        <xs:sequence>
+            <xs:element name="hora" type="tipoHora" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attribute name="idgrupo" type="xs:string"/>
+        <xs:attribute name="codT" type="xs:ID" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="tipoHora">
+        <xs:sequence>
+            <xs:element name="dia_sem" type="tipoDiaSem" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attribute name="entrada" type="xs:string" use="required"/>
+        <xs:attribute name="salida" type="xs:string" use="required"/>
+    </xs:complexType>
+<!-- Declaracion tipoDiaSem -->
+    <xs:complexType name="tipoDiaSem">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="dia" type="xs:string" use="required"/>
+                <xs:attribute name="num" type="xs:string" default="1"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+</xs:element>
+
+
+
+
+
+
+
+
+
+<!-- Declaracion de elementos complejos -->
+
+    <xs:element name="horario">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="modulos" type="tipoModulos"/>
+                <xs:element name="profesores" type="tipoProfesores"/>
+                <xs:element name="imparte" type="tipoImparte"/>
+                <xs:element name="grupo" type="tipoGrupo" maxOccurs="4"/>
+            </xs:sequence>
+            <xs:attribute name="curso" type="xs:string"/>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT datospersonales (nombre,apellido,gmail,contrasenya,DNI,telefono,
+          localidad,provincia,fech_nac,direccion,CP,estudios,hamburguesa,
+          hora,observaciones)>
+
+<!ATTLIST datospersonales xmlns:xsi CDATA #IMPLIED
+xsi:noNamespaceSchemaLocation CDATA #IMPLIED >
+
+<!ELEMENT nombre (#PCDATA)>
+
+<!ELEMENT apellido (#PCDATA)>
+
+<!ELEMENT gmail (#PCDATA)>
+
+<!ELEMENT contrasenya (#PCDATA)>
+
+<!ELEMENT DNI (#PCDATA)>
+
+<!ELEMENT telefono (#PCDATA)>
+
+<!ELEMENT localidad (#PCDATA)>
+
+<!ELEMENT provincia (#PCDATA)>
+<!ATTLIST provincia
+    provincia (Zamora|Leon|Valladolid|Salamanca|Avila|Soria|Burgos|Palencia|Segovia) #IMPLIED
+  >
+
+<!ELEMENT fech_nac (#PCDATA)>
+
+<!ELEMENT direccion (#PCDATA)>
+
+<!ELEMENT CP (#PCDATA)>
+
+<!ELEMENT estudios (si,no)*>
+
+<!ELEMENT si (#PCDATA)>
+<!ATTLIST si
+    si CDATA #IMPLIED
+  >
+
+<!ELEMENT no (#PCDATA)>
+<!ATTLIST no
+    no CDATA #IMPLIED
+  >
+
+<!ELEMENT hamburguesa (pollo,ternera)*>
+
+<!ELEMENT pollo (#PCDATA)>
+<!ATTLIST pollo
+    tipo CDATA #IMPLIED>
+
+<!ELEMENT ternera (#PCDATA)>
+<!ATTLIST ternera
+    tipo CDATA #IMPLIED>
+
+<!ELEMENT hora (#PCDATA)>
+<!ATTLIST hora
+    hora CDATA #IMPLIED
+  >
+
+<!ELEMENT observaciones (#PCDATA)>
+<!ATTLIST observaciones
+    observaciones CDATA #IMPLIED
+  >

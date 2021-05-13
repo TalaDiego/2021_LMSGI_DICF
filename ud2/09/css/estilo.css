@@ -1,0 +1,131 @@
+@font-face{
+font-family: Fred;
+src: url(../fonts/FrederickatheGreat-Regular.ttf);
+}
+@font-face{
+font-family: Parisienne;
+src: url(../fonts/Parisienne-Regular.ttf);
+}
+@font-face{
+font-family: Archi;
+src: url(../fonts/ArchitectsDaughter-Regular.ttf);
+}
+@font-face{
+font-family: Goldman-Bold;
+src: url(../fonts/Goldman-Bold.ttf);
+}
+@font-face{
+font-family: Goldman-Regular;
+src: url(../fonts/Goldman-Regular.ttf);
+}
+body{
+background-image:url(../images/Le_petit_prince.png);
+background-repeat:no-repeat;
+background-position: 100% 0%;
+margin-right: 250px;
+font-family: Parisienne;
+font-style: italic;
+}
+h1{
+text-decoration: underline;
+text-decoration-style:double;
+font-family: Fred;
+color: Crimson;
+font-size: 3em;
+font-weight: bold;
+text-transform:capitalize;
+letter-spacing:5px;
+}
+p{
+background-color:Crimson;
+font-family: Goldman-Bold;
+font-size: 2em;
+padding: 5px,0px;
+text-transform:capitalize;
+}
+p span{
+color: #fff;
+}
+p:first-letter {
+font-size:2.5em;
+}
+.listas1 > li , .lista2 > li .lista3 > li {
+border: dotted 1px Crimson;
+}
+.lista1{
+list-style: inside circle;
+}
+.lista2{
+list-style: outside square;
+}
+.lista3{
+list-style: inside url(../images/sqpurple.png);
+}
+.lista4{
+background-color: lightsalmon;
+border: dashed 2px darkred;
+list-style: none;
+padding: 5px 15px;
+}
+.lista4 li {
+background-color: darkred;
+color: lightsalmon;
+margin-top: 2px;
+}
+.lista4 li:before {
+content: '#';
+width: 1em;
+margin-left: -1em;
+color: darkred;
+display:inline-block;
+}
+.lista5{
+background-color: lightsalmon;
+list-style: none;
+color: darkred;
+border-left: darkred 5px solid;
+padding: 5px;
+}
+.lista6 {
+color: darkred;
+list-style: none;
+margin: 0px;
+padding: 0px;
+}
+.lista6 li{
+border: dotted darkred;
+border-width: 1px 1px 0px 1px;
+}
+.lista6 li:last-child{
+border-bottom-width: 1px;
+}
+.lista3 li{
+border: dotted darkred;
+border-width: 1px 1px 0px 1px;
+}
+.lista3 li:last-child{
+border-bottom-width: 1px;
+}
+.lista2 li{
+border: dotted darkred;
+border-width: 1px 1px 0px 1px;
+}
+.lista2 li:last-child{
+border-bottom-width: 1px;
+}
+.lista1 li{
+border: dotted darkred;
+border-width: 1px 1px 0px 1px;
+}
+.lista1 li:last-child{
+border-bottom-width: 1px;
+}
+.lista1 li:nth-child(2n){
+font-family: Goldman-Regular;
+}
+.lista1 li:nth-child(2n+1){
+font-family: Goldman-Bold;
+}
+.lista2 li:nth-child(1){
+font-family: Archi;
+}

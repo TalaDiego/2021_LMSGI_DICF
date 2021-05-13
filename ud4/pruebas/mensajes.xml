@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<msg:mensajes
+    xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xmlns:ped='https://www.miempresa.com/pedido'
+    xmlns:msg='https://www.miempresa.com/mensajes'
+    xsi:schemaLocation='https://www.miempresa.com/pedido pedido.xsd
+    https://www.miempresa.com/mensajes mensajes.xsd'>
+    <msg:emisor>directora@ieslossauces.es</msg:emisor>
+    <msg:destinatario>oscar@ieslossauces.es</msg:destinatario>
+    <msg:mensaje>
+        <ped:pedido>
+            <ped:ordenpedido>orden1</ped:ordenpedido>
+            <ped:fecha>2021-03-03</ped:fecha>
+            <ped:id>12</ped:id>
+        </ped:pedido>
+    </msg:mensaje>
+
+</msg:mensajes>

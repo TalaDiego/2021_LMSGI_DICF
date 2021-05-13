@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HechosHistoricos>
+
+<HechosHistoricos>
+    <evento>
+        <descripcion>Se Funda YouTube</descripcion>
+        <fecha>
+            <dia>15</dia>
+            <mes>2</mes>
+            <anyo>2005</anyo>
+        </fecha>
+    </evento>
+    <evento>
+        <descripcion>Se Funda Google</descripcion>
+        <fecha>
+            <dia>5</dia>
+            <mes>9</mes>
+            <anyo>1998</anyo>
+        </fecha>
+    </evento>
+    <evento>
+        <descripcion>Se Funda Facebook</descripcion>
+        <fecha>
+            <dia>4</dia>
+            <mes>2</mes>
+            <anyo>2004</anyo>
+        </fecha>
+    </evento>
+</HechosHistoricos>

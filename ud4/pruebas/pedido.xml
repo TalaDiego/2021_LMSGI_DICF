@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<pd:pedido
+    xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xmlns:pd='https://www.miempresa.com/pedido'
+    xsi:schemaLocation='https://www.miempresa.com/pedido pedido.xsd'>
+    <pd:ordenpedido>pedido1</pd:ordenpedido>
+    <pd:fecha>2021-03-04</pd:fecha>
+    <pd:id>10</pd:id>
+
+</pd:pedido>

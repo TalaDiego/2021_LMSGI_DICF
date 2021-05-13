@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- Hecho por: Diego Castaño -->
+<!ELEMENT recetas (receta)*>
+<!ATTLIST recetas
+    xmlns:xsi CDATA #IMPLIED
+    xsi:noNamespaceSchemaLocation CDATA #IMPLIED>
+<!ELEMENT receta (nombre,descripcion?,tiempo,ingredientes+,instrucciones?)>
+<!ATTLIST receta
+    plato (primero|segundo|postre) #REQUIRED>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT descripcion (#PCDATA)>
+<!ELEMENT tiempo EMPTY>
+<!ATTLIST tiempo
+    preparacion CDATA #REQUIRED
+    coccion CDATA #IMPLIED>
+<!ELEMENT ingredientes (ingrediente)+>
+<!ELEMENT ingrediente (nombreIngrediente,cantidad?)>
+<!ELEMENT nombreIngrediente (#PCDATA)>
+<!ELEMENT cantidad (#PCDATA)>
+<!ATTLIST cantidad
+    unidad (gramos|pizca|mililitros|cucharada|chorro) #IMPLIED>
+<!ELEMENT instrucciones (paso)+>
+<!ELEMENT paso (#PCDATA)>
