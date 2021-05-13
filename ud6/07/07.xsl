@@ -24,6 +24,9 @@
         <meta name="refresh" content="180"/>
         <link rel="icon" href="../../images/finn.ico" type="image/ico"/>
     </xsl:template>
+    <xsl:template>
+        <xsl:text disable-output-escaping="yes">&lt;!DOCTYPE html&gt;</xsl:text>
+    </xsl:template>
     <xsl:template match="/">
         <html>
             <head>
