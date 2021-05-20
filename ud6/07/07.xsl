@@ -18,7 +18,7 @@
     <xsl:template name="Web">
         <meta charset="utf-8"/>
         <meta name="description" content="MiPrimerFormularioPlantilla"/>
-        <meta name="author" content="DiegoCastañoFreile"/>
+        <meta name="author" content="Diego Castaño Freile"/>
         <meta name="Keywords" content="clave"/>
         <meta name="generator" content="NotePad++"/>
         <meta name="refresh" content="180"/>

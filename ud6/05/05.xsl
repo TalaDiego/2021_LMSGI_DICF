@@ -7,10 +7,8 @@
         <xsl:text disable-output-escaping="yes">&lt;!DOCTYPE html&gt;</xsl:text>
         <html>
             <head>
-                <title>05 XSLT Factura F55 Isabel Mtnez. Guerra</title>
+                <title>05 XSLT Diego Castaño Freile</title>
                 <link rel="stylesheet" href="05.css" type="text/css"/>
-                <link rel="icon" href="../../images/favicon.png" type="image/png"/>
-                <meta name="author" content="Sasha"/>
                 <meta name="application-name" content="Factura numero F555"/>
                 <meta name="description" content="Información sobre una factura"/>
                 <meta name="keywords" content="factura, total, xslt, xml"/>
